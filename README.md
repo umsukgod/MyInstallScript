@@ -19,7 +19,6 @@ sudo apt-get -y install libssl-dev
 
 export LC_ALL="en_US.UTF-8" export LC_CTYPE="en_US.UTF-8"
 
-# install cmake(ver 3.17.3)
 wget https://github.com/Kitware/CMake/releases/download/v3.17.3/cmake-3.17.3.tar.gz
 
 tar -xzvf cmake-3.17.3.tar.gz
@@ -34,7 +33,6 @@ sudo make install
 
 cd ..
 
-# install boost(ver 1.73)
 wget https://dl.bintray.com/boostorg/release/1.73.0/source/boost_1_73_0.tar.gz
 
 tar -xzvf boost_1_73_0.tar.gz
@@ -48,7 +46,6 @@ sudo ./b2 --with-python --with-filesystem --with-system --with-regex install
 cd ..
 
 
-# install glew
 wget https://sourceforge.net/projects/glew/files/glew/2.1.0/glew-2.1.0.zip
 
 unzip glew-2.1.0.zip
@@ -68,7 +65,6 @@ cd ..
 cd ..
 
 
-# install glfw
 git clone https://github.com/glfw/glfw
 
 cd glfw
@@ -86,11 +82,9 @@ cd ..
 sudo apt-get -y install libglm-dev
 
 
-# install qt5
 sudo apt-get -y install qt5-default
 
 
-# install sublime
 sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common
 
 curl -fsSL https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -101,12 +95,10 @@ sudo apt-get -y update
 
 sudo apt-get -y install sublime-text
 
-# install pip, pip3
 apt-get install python-pip
 
 apt-get install python3-pip
 
-# install dart(ver 6.8.2)
 sudo apt-add-repository ppa:dartsim/ppa -y
 
 sudo apt-get update
