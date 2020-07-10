@@ -99,13 +99,39 @@ apt-get install python-pip
 
 apt-get install python3-pip
 
+virtualenv ~/venv/tf_env --python=python3
+
+. ~/venv/tf_env/bin/activate
+
+pip install tensorflow
+
+pip3 install ipython
+
+pip3 install matplotlib
+
+
+
 sudo apt-add-repository ppa:dartsim/ppa -y
 
 sudo apt-get update
 
-sudo apt-get -y install libdart6-all-dev
+sudo apt-get install coinor-libipopt-dev
 
-sudo apt-get -y remove libdart*
+sudo apt-get install libbullet-dev
+
+sudo apt-get install libode-dev
+
+sudo apt-get install liboctomap-dev
+
+sudo apt-get install libflann-dev
+
+sudo apt-get install libtinyxml2-dev
+
+sudo apt-get install liburdfdom-dev
+
+sudo apt-get install libxi-dev libxmu-dev freeglut3-dev
+
+sudo apt-get install libopenscenegraph-dev
 
 git clone git://github.com/dartsim/dart.git
 
@@ -126,14 +152,3 @@ sudo make install
 cd ..
 
 cd ..
-
-
-virtualenv ~/venv/tf_env --python=python3
-
-. ~/venv/tf_env/bin/activate
-
-pip install tensorflow
-
-pip3 install ipython
-
-pip3 install matplotlib
