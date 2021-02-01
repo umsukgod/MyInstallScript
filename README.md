@@ -2,7 +2,8 @@
 Install script for deep learning using dart.
 -----------------------------------------------
 
-#What to do after(zsh font) : Go to termnal - edit - profiles - Text - Custom font -> Ubuntu Mono derivative Powerline Regular 
+#What to do after(zsh font) : Go to termnal - edit - profiles - Text - Custom font -> Ubuntu Mono derivative Powerline Regular
+
 #What to do after(install Korean) : https://driz2le.tistory.com/253 + Language Support-korean install
 
 sudo apt-get update
