@@ -152,3 +152,9 @@ sudo make install
 cd ..
 
 cd ..
+
+sudo apt-get -y install zsh
+
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
