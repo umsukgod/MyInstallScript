@@ -1,6 +1,9 @@
 # MyInstallScript
 Install script for deep learning using dart.
 -----------------------------------------------
+
+#What to do after : Go to termnal - edit - profiles - Text - Custom font -> Ubuntu Mono derivative Powerline Regular 
+
 sudo apt-get update
 
 sudo apt-get -y install libgconf2-4 libnss3-1d libxss1
@@ -150,6 +153,14 @@ make -j4
 sudo make install
 
 cd ..
+
+cd ..
+
+git clone https://github.com/powerline/fonts.git
+
+cd fonts
+
+./install.sh
 
 cd ..
 
