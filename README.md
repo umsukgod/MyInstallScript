@@ -142,11 +142,9 @@ sudo apt-get install libxi-dev libxmu-dev freeglut3-dev
 
 sudo apt-get install libopenscenegraph-dev
 
-git clone git://github.com/dartsim/dart.git
+git clone https://github.com/snumrl/dart-ltspd.git
 
-cd dart
-
-git checkout tags/v6.8.2
+cd dart-ltspd
 
 mkdir build
 
