@@ -122,25 +122,25 @@ pip3 install matplotlib
 
 sudo apt-add-repository ppa:dartsim/ppa -y
 
-sudo apt-get update
+sudo apt-get -y update
 
-sudo apt-get install coinor-libipopt-dev
+sudo apt-get -y install coinor-libipopt-dev
 
-sudo apt-get install libbullet-dev
+sudo apt-get -y install libbullet-dev
 
-sudo apt-get install libode-dev
+sudo apt-get -y install libode-dev
 
-sudo apt-get install liboctomap-dev
+sudo apt-get -y install liboctomap-dev
 
-sudo apt-get install libflann-dev
+sudo apt-get -y install libflann-dev
 
-sudo apt-get install libtinyxml2-dev
+sudo apt-get -y install libtinyxml2-dev
 
-sudo apt-get install liburdfdom-dev
+sudo apt-get -y install liburdfdom-dev
 
-sudo apt-get install libxi-dev libxmu-dev freeglut3-dev
+sudo apt-get -y install libxi-dev libxmu-dev freeglut3-dev
 
-sudo apt-get install libopenscenegraph-dev
+sudo apt-get -y install libopenscenegraph-dev
 
 git clone https://github.com/snumrl/dart-ltspd.git
 
