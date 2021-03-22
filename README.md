@@ -118,6 +118,8 @@ pip3 install ipython
 
 pip3 install matplotlib
 
+pip install pybind11
+
 
 
 sudo apt-add-repository ppa:dartsim/ppa -y
@@ -165,6 +167,24 @@ git clone https://github.com/powerline/fonts.git
 cd fonts
 
 ./install.sh
+
+cd ..
+
+git clone https://github.com/pybind/pybind11.git
+
+cd pybind11
+
+mkdir build
+
+cd build
+
+cmake ..
+
+make -j4
+
+sudo make install
+
+cd ..
 
 cd ..
 
