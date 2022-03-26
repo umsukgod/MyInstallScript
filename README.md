@@ -90,4 +90,20 @@ sudo apt-get -y install zsh
 
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
-sudo git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+cat << EOF > ~/.zshrc
+export ZSH="/home/minseok/.oh-my-zsh"
+
+ZSH_THEME="agnoster"
+
+plugins=(git zsh-autosuggestions)
+
+source $ZSH/oh-my-zsh.sh
+
+prompt_context() {
+if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+fi
+}
+EOF
