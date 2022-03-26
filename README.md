@@ -52,6 +52,8 @@ virtualenv ~/venv/tf_env --python=python3
 
 pip install tensorflow
 
+pip3 install torch torchvision torchaudio
+
 pip3 install ipython
 
 pip3 install matplotlib
