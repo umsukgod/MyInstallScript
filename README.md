@@ -112,11 +112,11 @@ fi
 }
 EOF
 
-#wget https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3.tar.gz
+#wget https://github.com/Kitware/CMake/releases/download/v3.17.3/cmake-3.17.3.tar.gz
 
-#tar -xzvf cmake-3.22.3.tar.gz
+#tar -xzvf cmake-3.17.3.tar.gz
 
-#cd cmake-3.22.3/
+#cd cmake-3.17.3/
 
 #./bootstrap
 
