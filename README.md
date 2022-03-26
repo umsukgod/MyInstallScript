@@ -18,7 +18,7 @@ sudo apt-get -y install libeigen3-dev libassimp-dev libccd-dev libfcl-dev libboo
 
 sudo apt-get -y install libopenscenegraph-dev
 
-sudo apt-get -y install libtinyxml-dev libeigen3-dev libxi-dev libxmu-dev freeglut3-dev libassimp-dev libpython3-dev python3-tk python3-numpy virtualenv ipython3 cmake-curses-gui
+sudo apt-get -y install libtinyxml-dev libeigen3-dev libxi-dev libxmu-dev freeglut3-dev libassimp-dev libpython3-dev python3-tk python3-numpy virtualenv ipython3 cmake-curses-gui libglew-dev
 
 sudo apt-get -y install libglfw3
 
