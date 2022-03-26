@@ -107,3 +107,17 @@ prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
 fi
 }
 EOF
+
+#wget https://github.com/Kitware/CMake/releases/download/v3.22.3/cmake-3.22.3.tar.gz
+
+#tar -xzvf cmake-3.22.3.tar.gz
+
+#cd cmake-3.22.3/
+
+#./bootstrap
+
+#make
+
+#sudo make install
+
+#cd ..
