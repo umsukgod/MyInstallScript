@@ -116,7 +116,7 @@ EOF
 
 #./bootstrap
 
-#make
+#make -j$(nproc)
 
 #sudo make install
 
