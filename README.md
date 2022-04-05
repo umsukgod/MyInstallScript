@@ -96,22 +96,6 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-cat << EOF > ~/.zshrc
-
-export ZSH="/home/minseok/.oh-my-zsh"
-
-ZSH_THEME="agnoster"
-
-plugins=(git zsh-autosuggestions)
-
-source $ZSH/oh-my-zsh.sh
-
-prompt_context() {
-if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
-fi
-}
-EOF
 
 #wget https://github.com/Kitware/CMake/releases/download/v3.17.3/cmake-3.17.3.tar.gz
 
@@ -126,3 +110,21 @@ EOF
 #sudo make install
 
 #cd ..
+
+
+#cat << EOF > ~/.zshrc
+
+#export ZSH="/home/minseok/.oh-my-zsh"
+
+#ZSH_THEME="agnoster"
+
+#plugins=(git zsh-autosuggestions)
+
+#source $ZSH/oh-my-zsh.sh
+
+#prompt_context() {
+#if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+#prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+#fi
+#}
+#EOF
