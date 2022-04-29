@@ -34,6 +34,21 @@ sudo apt-get -y install qt5-default
 
 sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common
 
+wget https://github.com/Kitware/CMake/releases/download/v3.17.3/cmake-3.17.3.tar.gz
+
+tar -xzvf cmake-3.17.3.tar.gz
+
+cd cmake-3.17.3/
+
+./bootstrap
+
+make -j$(nproc)
+
+sudo make install
+
+cd ..
+
+
 curl -fsSL https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 
 sudo add-apt-repository "deb https://download.sublimetext.com/ apt/stable/"
@@ -95,21 +110,6 @@ sudo apt-get -y install zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-
-#wget https://github.com/Kitware/CMake/releases/download/v3.17.3/cmake-3.17.3.tar.gz
-
-#tar -xzvf cmake-3.17.3.tar.gz
-
-#cd cmake-3.17.3/
-
-#./bootstrap
-
-#make -j$(nproc)
-
-#sudo make install
-
-#cd ..
 
 
 #cat << EOF > ~/.zshrc
